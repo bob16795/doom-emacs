@@ -53,5 +53,6 @@
 (package! dirtree)
 (package! gdscript-mode)
 (package! tree-mode)
+(package! org-bullets)
 (package! slam-mode
   :recipe (:host github :repo "slam-lang/slam-mode" :files ("slam-mode.el")))
