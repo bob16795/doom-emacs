@@ -210,9 +210,12 @@
                                ("^slime-.*" . "lisp-mode_icon")
                                ("^sly-.*$" . "lisp-mode_icon")))
 
+(setq ob-mermaid-cli-path "/usr/bin/mmdc")
+
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((dot . t))) ; this line activates dot
+ '((mermaid . t)
+   (dot . t))) ; this line activates dot
 
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

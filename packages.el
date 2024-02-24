@@ -75,3 +75,4 @@
 (when (and (modulep! :checkers syntax)
            (not (modulep! :checkers syntax +flymake)))
   (package! flycheck-nim))
+(package! ob-mermaid)
